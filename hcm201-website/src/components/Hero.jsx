@@ -14,7 +14,10 @@ function Hero() {
     <section style={{
       textAlign: 'center',
       padding: '4rem 2rem 3rem 2rem',
-      background: 'linear-gradient(135deg, #1b4332 0%, #2d6a4f 100%)',
+      // Phủ màu xanh mờ đè lên hình nền quả địa cầu & tiền
+      background: 'linear-gradient(rgba(27, 67, 50, 0.88), rgba(45, 106, 79, 0.92)), url("/hero-bg.jpg")',
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
       borderRadius: '24px',
       margin: '1.5rem 0 2rem 0',
       color: '#fff',
@@ -23,9 +26,9 @@ function Hero() {
       overflow: 'hidden'
     }}>
       <span style={{
-        backgroundColor: 'rgba(82, 183, 136, 0.2)',
+        backgroundColor: 'rgba(82, 183, 136, 0.25)',
         color: '#74c69d',
-        border: '1px solid rgba(116, 198, 157, 0.3)',
+        border: '1px solid rgba(116, 198, 157, 0.4)',
         padding: '0.4rem 1.2rem',
         borderRadius: '30px',
         fontSize: '0.85rem',
@@ -46,15 +49,16 @@ function Hero() {
         Nghiên cứu quy luật vận động của tư bản, bản chất giá trị thặng dư và lợi nhuận trong nền kinh tế hiện đại.
       </p>
 
-      {/* Card Thành viên thiết kế đẹp mắt */}
+      {/* Card Thành viên với hiệu ứng Glassmorphism nổi bật trên nền ảnh */}
       <div style={{
         maxWidth: '850px',
         margin: '0 auto 2.5rem auto',
         padding: '1.8rem',
-        backgroundColor: 'rgba(255, 255, 255, 0.06)',
-        backdropFilter: 'blur(10px)',
+        backgroundColor: 'rgba(0, 0, 0, 0.35)',
+        backdropFilter: 'blur(12px)',
+        WebkitBackdropFilter: 'blur(12px)',
         borderRadius: '16px',
-        border: '1px solid rgba(255, 255, 255, 0.12)'
+        border: '1px solid rgba(255, 255, 255, 0.18)'
       }}>
         <h3 style={{ margin: '0 0 1.2rem 0', fontSize: '0.95rem', color: '#b7e4c7', textTransform: 'uppercase', letterSpacing: '1px' }}>
           👥 Thành Viên Thực Hiện (Group 3)
@@ -67,13 +71,14 @@ function Hero() {
         }}>
           {members.map((m, idx) => (
             <div key={idx} style={{
-              backgroundColor: 'rgba(255, 255, 255, 0.08)',
-              padding: '0.6rem 1rem',
+              backgroundColor: 'rgba(255, 255, 255, 0.12)',
+              padding: '0.65rem 1rem',
               borderRadius: '10px',
               fontSize: '0.88rem',
               display: 'flex',
               justifyContent: 'space-between',
-              alignItems: 'center'
+              alignItems: 'center',
+              border: '1px solid rgba(255, 255, 255, 0.1)'
             }}>
               <span style={{ fontWeight: '600', color: '#fff' }}>{m.name}</span>
               <span style={{ fontSize: '0.78rem', color: '#95d5b2' }}>{m.id}</span>
@@ -91,8 +96,7 @@ function Hero() {
           textDecoration: 'none',
           fontWeight: '700',
           fontSize: '0.98rem',
-          boxShadow: '0 4px 14px rgba(82, 183, 136, 0.4)',
-          transition: 'all 0.2s'
+          boxShadow: '0 4px 14px rgba(82, 183, 136, 0.4)'
         }}>
           ▶ Xem Bài Giảng YouTube
         </a>
