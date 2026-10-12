@@ -6,28 +6,43 @@ function Navbar() {
       display: 'flex',
       justifyContent: 'space-between',
       alignItems: 'center',
-      padding: '1rem 2rem',
-      backgroundColor: '#1b4332',
+      padding: '1.2rem 3rem',
+      backgroundColor: 'rgba(27, 67, 50, 0.95)',
       color: '#fff',
-      boxShadow: '0 2px 4px rgba(0,0,0,0.1)',
       position: 'sticky',
       top: 0,
-      zIndex: 1000
+      zIndex: 1000,
+      borderBottom: '1px solid rgba(255, 255, 255, 0.1)'
     }}>
-      <div style={{ fontWeight: 'bold', fontSize: '1.2rem', letterSpacing: '0.5px' }}>
-        KTCT - GROUP 3
+      <div style={{
+        fontWeight: '800',
+        fontSize: '1.35rem',
+        letterSpacing: '0.5px',
+        display: 'flex',
+        alignItems: 'center',
+        gap: '0.5rem'
+      }}>
+        <span style={{
+          backgroundColor: '#52b788',
+          color: '#1b4332',
+          padding: '0.25rem 0.6rem',
+          borderRadius: '8px',
+          fontSize: '0.9rem'
+        }}>KTCT</span>
+        <span>GROUP 3</span>
       </div>
+
       <ul style={{
         display: 'flex',
         listStyle: 'none',
-        gap: '1.5rem',
+        gap: '2rem',
         margin: 0,
         padding: 0
       }}>
-        <li><a href="#overview" style={{ color: '#fff', textDecoration: 'none', fontSize: '0.95rem' }}>Tổng quan</a></li>
-        <li><a href="#youtube-lectures" style={{ color: '#fff', textDecoration: 'none', fontSize: '0.95rem' }}>Video Bài giảng</a></li>
-        <li><a href="#chapters" style={{ color: '#fff', textDecoration: 'none', fontSize: '0.95rem' }}>Nội dung Slide</a></li>
-        <li><a href="#kahoot-quiz" style={{ color: '#fff', textDecoration: 'none', fontSize: '0.95rem' }}>Trắc nghiệm Kahoot</a></li>
+        <li><a href="#overview" style={{ color: '#e8f5e9', textDecoration: 'none', fontSize: '0.95rem', fontWeight: '500' }}>Tổng quan</a></li>
+        <li><a href="#youtube-lectures" style={{ color: '#e8f5e9', textDecoration: 'none', fontSize: '0.95rem', fontWeight: '500' }}>Video Bài giảng</a></li>
+        <li><a href="#chapters" style={{ color: '#e8f5e9', textDecoration: 'none', fontSize: '0.95rem', fontWeight: '500' }}>Nội dung Slide</a></li>
+        <li><a href="#kahoot-quiz" style={{ color: '#e8f5e9', textDecoration: 'none', fontSize: '0.95rem', fontWeight: '500' }}>Trắc nghiệm Kahoot</a></li>
       </ul>
     </nav>
   );

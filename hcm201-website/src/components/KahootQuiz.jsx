@@ -1,7 +1,6 @@
 import React from 'react';
 
 function KahootQuiz() {
-  // Link Kahoot chính thức của Group 3
   const kahootUrl = "https://create.kahoot.it/details/705bbeed-c0db-4fa0-8e99-f0a0edc6ddcc";
 
   const qaList = [
@@ -17,31 +16,31 @@ function KahootQuiz() {
 
   return (
     <section id="kahoot-quiz" style={{
-      padding: '2.5rem 1.5rem',
-      maxWidth: '1000px',
+      padding: '3rem 2rem',
+      maxWidth: '1100px',
       margin: '0 auto',
-      backgroundColor: '#f4fbf7',
-      borderRadius: '16px',
-      border: '1px solid #d8f3dc'
+      backgroundColor: '#f8f4ff',
+      borderRadius: '24px',
+      border: '1px solid #e1bee7'
     }}>
-      <h2 style={{ fontSize: '1.8rem', marginBottom: '1.5rem', textAlign: 'center', color: '#1b4332' }}>
+      <h2 style={{ fontSize: '1.8rem', fontWeight: '800', marginBottom: '2rem', textAlign: 'center', color: '#4a148c' }}>
         Ôn Tập & Câu Hỏi Thảo Luận
       </h2>
 
-      {/* Khối Kahoot dẫn trực tiếp tới trò chơi */}
       <div style={{
-        backgroundColor: '#f3e5f5',
-        padding: '2rem 1.5rem',
-        borderRadius: '12px',
+        backgroundColor: '#fff',
+        padding: '2.5rem 2rem',
+        borderRadius: '20px',
         border: '2px dashed #ab47bc',
         textAlign: 'center',
-        marginBottom: '2.5rem'
+        marginBottom: '2.5rem',
+        boxShadow: 'var(--shadow-md)'
       }}>
-        <div style={{ fontSize: '2.5rem', marginBottom: '0.3rem' }}>🎮</div>
-        <h3 style={{ fontSize: '1.4rem', color: '#4a148c', margin: '0 0 0.5rem 0' }}>
+        <div style={{ fontSize: '3rem', marginBottom: '0.5rem' }}>🎮</div>
+        <h3 style={{ fontSize: '1.5rem', fontWeight: '800', color: '#4a148c', margin: '0 0 0.6rem 0' }}>
           Trắc Nghiệm Tương Tác Qua Kahoot!
         </h3>
-        <p style={{ color: '#6a1b9a', maxWidth: '600px', margin: '0 auto 1.5rem auto', fontSize: '0.95rem', lineHeight: '1.5' }}>
+        <p style={{ color: '#6a1b9a', maxWidth: '620px', margin: '0 auto 1.8rem auto', fontSize: '0.98rem', lineHeight: '1.6' }}>
           Tham gia trò chơi trắc nghiệm Kahoot để củng cố các kiến thức về Giá trị thặng dư, Tư bản cố định/lưu động và Lợi nhuận cùng Group 3!
         </p>
         <a
@@ -50,14 +49,14 @@ function KahootQuiz() {
           rel="noopener noreferrer"
           style={{
             display: 'inline-block',
-            padding: '0.8rem 2rem',
+            padding: '1rem 2.5rem',
             backgroundColor: '#864cbf',
             color: '#fff',
-            fontSize: '1rem',
-            fontWeight: 'bold',
-            borderRadius: '8px',
+            fontSize: '1.05rem',
+            fontWeight: '800',
+            borderRadius: '12px',
             textDecoration: 'none',
-            boxShadow: '0 4px 8px rgba(134,76,191,0.25)',
+            boxShadow: '0 6px 16px rgba(134,76,191,0.3)',
             transition: 'transform 0.2s'
           }}
         >
@@ -65,21 +64,20 @@ function KahootQuiz() {
         </a>
       </div>
 
-      {/* Phần Câu hỏi thảo luận mở (Q&A) */}
-      <h3 style={{ fontSize: '1.3rem', color: '#1b4332', marginBottom: '1rem', textAlign: 'center' }}>
+      <h3 style={{ fontSize: '1.3rem', fontWeight: '700', color: 'var(--primary)', marginBottom: '1.2rem', textAlign: 'center' }}>
         💡 Câu Hỏi Thảo Luận Mở (Q&A)
       </h3>
-      <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '1.2rem' }}>
         {qaList.map((item, idx) => (
-          <div key={idx} style={{ 
-            padding: '1.2rem', 
-            backgroundColor: '#fff', 
-            borderRadius: '8px', 
-            borderLeft: '4px solid #2d6a4f',
-            boxShadow: '0 2px 4px rgba(0,0,0,0.02)'
+          <div key={idx} style={{
+            padding: '1.5rem',
+            backgroundColor: '#fff',
+            borderRadius: '14px',
+            borderLeft: '5px solid var(--primary)',
+            boxShadow: 'var(--shadow-sm)'
           }}>
-            <h4 style={{ margin: '0 0 0.5rem 0', color: '#2d6a4f', fontSize: '0.98rem' }}>{item.q}</h4>
-            <p style={{ margin: 0, color: '#555', fontSize: '0.9rem', lineHeight: '1.5' }}>{item.a}</p>
+            <h4 style={{ margin: '0 0 0.6rem 0', color: 'var(--primary)', fontSize: '1.02rem', fontWeight: '700' }}>{item.q}</h4>
+            <p style={{ margin: 0, color: 'var(--text-secondary)', fontSize: '0.92rem', lineHeight: '1.6' }}>{item.a}</p>
           </div>
         ))}
       </div>
