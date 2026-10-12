@@ -1,8 +1,8 @@
 import React from 'react';
 
 function KahootQuiz() {
-  // Bạn có thể thay đường link Kahoot thực tế của nhóm vào đây
-  const kahootUrl = "https://kahoot.it/";
+  // Link Kahoot chính thức của Group 3
+  const kahootUrl = "https://create.kahoot.it/details/705bbeed-c0db-4fa0-8e99-f0a0edc6ddcc";
 
   const qaList = [
     {
@@ -28,7 +28,7 @@ function KahootQuiz() {
         Ôn Tập & Câu Hỏi Thảo Luận
       </h2>
 
-      {/* Khối Kahoot thay thế cho trắc nghiệm chọn đáp án */}
+      {/* Khối Kahoot dẫn trực tiếp tới trò chơi */}
       <div style={{
         backgroundColor: '#f3e5f5',
         padding: '2rem 1.5rem',
@@ -57,14 +57,15 @@ function KahootQuiz() {
             fontWeight: 'bold',
             borderRadius: '8px',
             textDecoration: 'none',
-            boxShadow: '0 4px 8px rgba(134,76,191,0.25)'
+            boxShadow: '0 4px 8px rgba(134,76,191,0.25)',
+            transition: 'transform 0.2s'
           }}
         >
           🚀 VÀO CHƠI KAHOOT NGAY
         </a>
       </div>
 
-      {/* Giữ nguyên phần Câu hỏi thảo luận mở (Q&A) */}
+      {/* Phần Câu hỏi thảo luận mở (Q&A) */}
       <h3 style={{ fontSize: '1.3rem', color: '#1b4332', marginBottom: '1rem', textAlign: 'center' }}>
         💡 Câu Hỏi Thảo Luận Mở (Q&A)
       </h3>

@@ -65,7 +65,7 @@ function YoutubeLectures() {
         📺 Gợi Ý Video Bài Giảng YouTube
       </h2>
       <p style={{ textAlign: 'center', color: '#6c757d', marginBottom: '2rem', fontSize: '0.95rem' }}>
-        Chuỗi video bài giảng Kinh tế Chính trị Mác - Lênin (TS. Trần Hoàng Hải)[cite: 17]
+        Chuỗi video bài giảng Chương 3 Kinh tế Chính trị Mác - Lênin (TS. Trần Hoàng Hải)[cite: 17]
       </p>
 
       <div style={{
