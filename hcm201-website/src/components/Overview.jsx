@@ -20,27 +20,36 @@ function Overview() {
   ];
 
   return (
-    <section id="overview" style={{ padding: '3rem 1rem', maxWidth: '1100px', margin: '0 auto' }}>
-      <h2 style={{ fontSize: '1.8rem', fontWeight: '800', marginBottom: '2rem', textAlign: 'center', color: 'var(--primary)' }}>
+    <section id="overview" style={{ padding: '3rem 1rem', maxWidth: '1200px', margin: '0 auto' }}>
+      <h2 style={{ fontSize: '1.8rem', fontWeight: '800', marginBottom: '2rem', textAlign: 'center', color: 'var(--primary, #1b4332)' }}>
         Khung Cấu Trúc Trọng Tâm
       </h2>
 
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '1.8rem' }}>
+      {/* Bố cục 3 cột nằm trên cùng 1 đường ngang */}
+      <div style={{
+        display: 'grid',
+        gridTemplateColumns: 'repeat(3, 1fr)',
+        gap: '1.5rem',
+        width: '100%'
+      }}>
         {cards.map((c, idx) => (
           <div key={idx} className="card-hover" style={{
-            padding: '2rem',
-            border: '1px solid rgba(82, 183, 136, 0.2)',
-            borderRadius: 'var(--radius-lg)',
-            backgroundColor: 'var(--card-bg)',
-            boxShadow: 'var(--shadow-md)'
+            padding: '1.8rem 1.5rem',
+            border: '1px solid rgba(82, 183, 136, 0.25)',
+            borderRadius: '16px',
+            backgroundColor: '#ffffff',
+            boxShadow: '0 4px 12px rgba(0, 0, 0, 0.04)',
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'flex-start'
           }}>
-            <span style={{ fontSize: '2rem', fontWeight: '800', color: 'var(--accent)', display: 'block', marginBottom: '0.8rem' }}>
+            <span style={{ fontSize: '2rem', fontWeight: '800', color: '#52b788', display: 'block', marginBottom: '0.6rem' }}>
               {c.step}
             </span>
-            <h3 style={{ color: 'var(--primary)', fontSize: '1.2rem', fontWeight: '700', marginBottom: '0.8rem' }}>
+            <h3 style={{ color: '#1b4332', fontSize: '1.1rem', fontWeight: '700', marginBottom: '0.8rem', lineHeight: '1.4' }}>
               {c.title}
             </h3>
-            <p style={{ color: 'var(--text-secondary)', fontSize: '0.92rem', lineHeight: '1.6' }}>
+            <p style={{ color: '#526358', fontSize: '0.88rem', lineHeight: '1.6', margin: 0 }}>
               {c.desc}
             </p>
           </div>
