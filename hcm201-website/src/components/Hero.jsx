@@ -41,7 +41,7 @@ function Hero() {
       </span>
 
       <h1 style={{ fontSize: '2.5rem', fontWeight: '800', lineHeight: '1.25', marginBottom: '0.8rem', letterSpacing: '-0.5px' }}>
-        Giá Trị Kinh Tế Trong Nền Kinh Tế Thị Trường
+        Giá Trị Thặng Dư Trong Nền Kinh Tế Thị Trường
       </h1>
 
       <p style={{ maxWidth: '680px', margin: '0 auto 2.5rem auto', color: '#d8f3dc', fontSize: '1.05rem', lineHeight: '1.6' }}>
