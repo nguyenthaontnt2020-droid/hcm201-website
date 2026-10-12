@@ -15,8 +15,7 @@ function Hero() {
       textAlign: 'center',
       padding: '4rem 2rem 3rem 2rem',
       // Phủ màu xanh mờ đè lên hình nền quả địa cầu & tiền
-      background: 'linear-gradient(rgba(27, 67, 50, 0.88), rgba(45, 106, 79, 0.92)), url("/hero-bg.jpg")',
-      backgroundSize: 'cover',
+      background: 'linear-gradient(rgba(27, 67, 50, 0.70), rgba(27, 67, 50, 0.75)), url("/hero-bg.jpg")',       backgroundSize: 'cover',
       backgroundPosition: 'center',
       borderRadius: '24px',
       margin: '1.5rem 0 2rem 0',
