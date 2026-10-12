@@ -24,13 +24,13 @@ function Overview() {
         <div style={{ padding: '1.5rem', border: '1px solid #e0e0e0', borderRadius: '8px', backgroundColor: '#fff' }}>
           <h3 style={{ color: '#007bff', marginTop: 0 }}>Phương Pháp Học</h3>
           <p style={{ color: '#555', lineHeight: '1.5' }}>
-            Kết hợp nghe giảng qua Podcast, tóm tắt lý thuyết trọng tâm từng chương và luyện tập câu hỏi trắc nghiệm.
+            Kết hợp nghe giảng qua Youtube, tóm tắt lý thuyết trọng tâm từng chương và luyện tập câu hỏi trắc nghiệm.
           </p>
         </div>
         <div style={{ padding: '1.5rem', border: '1px solid #e0e0e0', borderRadius: '8px', backgroundColor: '#fff' }}>
           <h3 style={{ color: '#007bff', marginTop: 0 }}>Kết Quả Đạt Được</h3>
           <p style={{ color: '#555', lineHeight: '1.5' }}>
-            Hiểu rõ giá trị thực tiễn của tư tưởng Bác, vận dụng vào tư duy phân tích và hoàn thành tốt bài thi môn HCM201.
+            Hiểu rõ giá trị thực tiễn của tư tưởng Bác, vận dụng vào tư duy phân tích và hoàn thành tốt bài thi môn Kinh tế chính trị- Mác Lenin.
           </p>
         </div>
       </div>

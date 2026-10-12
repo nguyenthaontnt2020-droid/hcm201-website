@@ -13,58 +13,74 @@ function Hero() {
   return (
     <section style={{
       textAlign: 'center',
-      padding: '3rem 1rem',
+      padding: '3rem 1.5rem',
       backgroundColor: '#e8f5e9',
-      borderRadius: '12px',
-      margin: '1.5rem 0'
+      borderRadius: '16px',
+      margin: '1.5rem 0',
+      border: '1px solid #b7e4c7'
     }}>
-      <h1 style={{ fontSize: '2.2rem', color: '#2d6a4f', marginBottom: '0.5rem' }}>
+      <span style={{
+        backgroundColor: '#2d6a4f',
+        color: '#fff',
+        padding: '0.3rem 0.8rem',
+        borderRadius: '20px',
+        fontSize: '0.8rem',
+        fontWeight: 'bold',
+        textTransform: 'uppercase',
+        letterSpacing: '1px'
+      }}>
+        Báo cáo Thuyết trình
+      </span>
+      <h1 style={{ fontSize: '2.2rem', color: '#1b4332', margin: '0.8rem 0 0.3rem 0' }}>
         KINH TẾ CHÍNH TRỊ MÁC - LÊNIN
       </h1>
-      <h2 style={{ fontSize: '1.4rem', color: '#40916c', fontWeight: 'normal', marginBottom: '1rem' }}>
+      <h2 style={{ fontSize: '1.3rem', color: '#40916c', fontWeight: '500', marginBottom: '1.5rem' }}>
         Giá Trị Kinh Tế Trong Nền Kinh Tế Thị Trường
       </h2>
-      <p style={{ maxWidth: '750px', margin: '0 auto 1.5rem auto', color: '#555', lineHeight: '1.6' }}>
-        Nghiên cứu về điều kiện tiền chuyển hóa thành tư bản, quá trình sản xuất giá trị thặng dư (m), tuần hoàn - chu chuyển tư bản và bản chất của lợi nhuận (p) trong kinh tế thị trường hiện đại.
-      </p>
 
       <div style={{
-        maxWidth: '700px',
+        maxWidth: '750px',
         margin: '0 auto 1.5rem auto',
-        padding: '1rem',
+        padding: '1.2rem',
         backgroundColor: '#fff',
-        borderRadius: '8px',
-        border: '1px solid #b7e4c7'
+        borderRadius: '12px',
+        boxShadow: '0 2px 8px rgba(0,0,0,0.04)',
+        textAlign: 'left'
       }}>
-        <h3 style={{ margin: '0 0 0.5rem 0', fontSize: '1rem', color: '#1b4332' }}> Thành Viên Nhóm 3:</h3>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '0.5rem', textAlign: 'left', fontSize: '0.88rem', color: '#2d6a4f' }}>
+        <h3 style={{ margin: '0 0 0.8rem 0', fontSize: '1rem', color: '#1b4332', textAlign: 'center', borderBottom: '1px solid #eee', paddingBottom: '0.5rem' }}>
+          👥 Thành Viên Thực Hiện (Group 3)
+        </h3>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '0.6rem', fontSize: '0.88rem', color: '#2d6a4f' }}>
           {members.map((m, idx) => (
-            <div key={idx}>• {m}</div>
+            <div key={idx} style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+              <span style={{ color: '#52b788' }}>•</span> {m}
+            </div>
           ))}
         </div>
       </div>
 
-      <div style={{ display: 'flex', justifyContent: 'center', gap: '1rem' }}>
-        <a href="#podcasts" style={{
+      <div style={{ display: 'flex', justifyContent: 'center', gap: '1rem', flexWrap: 'wrap' }}>
+        <a href="#youtube-lectures" style={{
           padding: '0.75rem 1.5rem',
           backgroundColor: '#2d6a4f',
           color: '#fff',
-          borderRadius: '6px',
+          borderRadius: '8px',
           textDecoration: 'none',
-          fontWeight: 'bold'
+          fontWeight: 'bold',
+          fontSize: '0.95rem'
         }}>
-          Nghe Bài Giảng
+          ▶ Xem Video Bài Giảng
         </a>
-        <a href="#quiz" style={{
+        <a href="#kahoot-quiz" style={{
           padding: '0.75rem 1.5rem',
-          backgroundColor: '#fff',
-          color: '#2d6a4f',
-          border: '2px solid #2d6a4f',
-          borderRadius: '6px',
+          backgroundColor: '#864cbf',
+          color: '#fff',
+          borderRadius: '8px',
           textDecoration: 'none',
-          fontWeight: 'bold'
+          fontWeight: 'bold',
+          fontSize: '0.95rem'
         }}>
-          Ôn Bài Trắc Nghiệm
+          🎮 Chơi Kahoot Trắc Nghiệm
         </a>
       </div>
     </section>
