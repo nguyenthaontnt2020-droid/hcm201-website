@@ -37,10 +37,10 @@ function Chapters() {
     )},
     { num: '4', title: 'Tỷ suất & Khối lượng Giá trị thặng dư', badge: 'm\' & M', content: (
       <div>
-        <p style={{ margin: '0 0 0.4rem 0', fontSize: '0.9rem' }}>• <strong>Tỷ suất m\':</strong> m\' = (m/v) × 100% (Trình độ bóc lột)</p>
-        <p style={{ margin: '0 0 0.6rem 0', fontSize: '0.9rem' }}>• <strong>Khối lượng M:</strong> M = m\' × V (Quy mô bóc lột)</p>
+        <p style={{ margin: '0 0 0.4rem 0', fontSize: '0.9rem' }}>• <strong>Tỷ suất m\':</strong> m' = (m/v) × 100% (Trình độ bóc lột)</p>
+        <p style={{ margin: '0 0 0.6rem 0', fontSize: '0.9rem' }}>• <strong>Khối lượng M:</strong> M = m' × V (Quy mô bóc lột)</p>
         <p style={{ margin: 0, fontSize: '0.85rem', color: '#555' }}>
-          <i>Ví dụ: Ngày làm 8h = 4h tất yếu + 4h thặng dư ⇒ m\' = 100%</i>
+          <i>Ví dụ: Ngày làm 8h = 4h tất yếu + 4h thặng dư ⇒ m' = 100%</i>
         </p>
       </div>
     )},
